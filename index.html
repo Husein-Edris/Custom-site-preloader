@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<!--
+	Made with ❤️ by Edris
+	Visit my GitHub: https://github.com/YourUsername
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/preloader.js"></script>
+</head>
+
+<body>
+    <script>
+        // Check if the "eh_preloader_disabled" cookie is set to 'true'
+        const isPreloaderDisabled = Cookies.get('eh_preloader_disabled');
+
+        // If preloader should be shown (cookie not set or set to 'false')
+        if (!isPreloaderDisabled) {
+            // Include the preloader content
+            const preloaderHtml = `
+            <div class="site-preloader" id="site-preloader">
+                <div class="slide slide--first">
+                    <div class="slide__inner">
+                        <img src="assets/icons/preloader-logo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="slide slide--second">
+                    <div class="slide__inner">
+                        <img id="preloader-heart-logo" class="preloader-heart-logo" src="assets/icons/preloder-heart-icon.svg" alt="Mit Herz">
+                        <div class="preloader--conten-text">
+                            <p class="h1 slide--second-heading">Mit Herz</p>
+                            <p class="preloader-sub-header">Leistungsbericht 2022</p>
+                        </div>
+                    </div>
+                    <div class="vid-container">
+                        <div class="vid-container__inner">
+                            <video width="100%" height="100%" loop muted autoplay playsinline>
+                                <source src="assets/video/preloader-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+            document.body.insertAdjacentHTML('afterbegin', preloaderHtml);
+        }
+    </script>
+
+</body>
+
+</html>

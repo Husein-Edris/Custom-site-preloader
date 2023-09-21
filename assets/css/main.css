@@ -1,0 +1,115 @@
+.site-preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #003e66;
+}
+
+@media only screen and (max-width: 1024px) {
+    .site-preloader {
+        display: none !important;
+    }
+}
+
+.site-preloader .slide {
+    height: 100%;
+    background-color: #003e66;
+}
+
+.site-preloader .slide__inner {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+.site-preloader .slide--second {
+    display: none;
+}
+
+.site-preloader .slide--second .preloader--conten-text .slide--second-heading {
+    color: #78b9e6;
+    font-size: 150px;
+    font-style: normal;
+    font-variation-settings: "wght"600;
+    margin: 0;
+    padding: 0;
+}
+
+.site-preloader .slide--second .preloader--conten-text .preloader-sub-header {
+    color: #78b9e6;
+    font-size: 22px;
+    font-style: normal;
+    font-variation-settings: "wght"600;
+    letter-spacing: 2.42px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 30px;
+}
+
+.site-preloader .slide--second .heart-logo-animation {
+    animation: pulsate 2s ease infinite;
+}
+
+@keyframes pulsate {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+.site-preloader .slide--second .heart-icon-filter {
+    mix-blend-mode: multiply;
+    -webkit-filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    opacity: 1;
+}
+
+.site-preloader .slide--second__inner {
+    z-index: 2;
+}
+
+.site-preloader .slide--second .vid-container {
+    display: none;
+    z-index: 1;
+    opacity: 0;
+}
+
+.site-preloader .slide--second .vid-container__inner {
+    opacity: 1;
+}
+
+.site-preloader .slide--second .vid-container__inner video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
