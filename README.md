@@ -28,4 +28,4 @@ Custom Site Preloader is a JavaScript-based solution for adding an elegant prelo
 
 ## Author
 - Edris Husein
-- GitHub: [Husein-Edris]https://github.com/Husein-Edris/
+- GitHub: https://github.com/Husein-Edris/
