@@ -32,3 +32,4 @@ Custom Site Preloader is a JavaScript-based solution for adding an elegant prelo
 - GitHub: https://github.com/Husein-Edris/
 
 Preview: https://github.com/Husein-Edris/custom-site-preloader/blob/master/custom-site-preloader.gif
+![custom-site-preloader](https://github.com/Husein-Edris/custom-site-preloader/assets/71021351/285433df-393c-4ea0-a98c-ad887b0e513a)
